@@ -31,7 +31,7 @@ namespace Сalculator_calor
         {
             double weight, height, countCalor;
             int year, iMT;
-            string activ, gender, WorldHO;
+            string activ, gender, worldHO;
             public void Calculate_button_Click(Form1 form1)
             {
                 height = (double)form1.Height_numericUpDown.Value;
@@ -86,19 +86,19 @@ namespace Сalculator_calor
                 iMT = (int)(weight / (height / 100 * height / 100));
                 form1.Resultat_richTextBox.Text += "Для роста " + height  + " см., при весе " + weight + " кг.индекс массы тела равен:" + iMT + "\n";
                 if (iMT < 16)
-                    WorldHO = "выраженный дефицит массы тела";
+                    worldHO = "выраженный дефицит массы тела";
                 else if (iMT < 18.5)
-                    WorldHO = "недостаточную массу тела";
+                    worldHO = "недостаточную массу тела";
                 else if (iMT < 24.99)
-                    WorldHO = ", что масса тела в норме";
+                    worldHO = ", что масса тела в норме";
                 else if (iMT < 30)
-                    WorldHO = "избыточную массу тела";
+                    worldHO = "избыточную массу тела";
                 else if (iMT < 35)
-                    WorldHO = "ожирение";
+                    worldHO = "ожирение";
                 else if (iMT < 40)
-                    WorldHO = "резкое ожирение";
-                else WorldHO = "очень резкое ожирение";
-                form1.Resultat_richTextBox.Text += "Согласно рекомендациям ВОЗ такой ИМТ означает " + WorldHO + "\n";
+                    worldHO = "резкое ожирение";
+                else worldHO = "очень резкое ожирение";
+                form1.Resultat_richTextBox.Text += "Согласно рекомендациям ВОЗ такой ИМТ означает " + worldHO + "\n";
 
                 form1.Resultat_richTextBox.Text += "Для набора веса рекомендуется потребление " + (int)(countCalor * 1.2) + " ккал в день, а для похудения стоит употреблять порядка " + (int)(countCalor * 0.8) + " ккал в день" + "\n";
             }

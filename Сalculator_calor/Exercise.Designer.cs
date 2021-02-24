@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Exercise));
-            this.Exercise_labl = new System.Windows.Forms.Label();
+            this.Exercise_lable = new System.Windows.Forms.Label();
             this.Exercise_TextBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // Exercise_labl
+            // Exercise_lable
             // 
-            this.Exercise_labl.AutoSize = true;
-            this.Exercise_labl.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Exercise_labl.Location = new System.Drawing.Point(9, 13);
-            this.Exercise_labl.Name = "Exercise_labl";
-            this.Exercise_labl.Size = new System.Drawing.Size(517, 28);
-            this.Exercise_labl.TabIndex = 0;
-            this.Exercise_labl.Text = "Пять степеней физических нагрузок в сутки";
+            this.Exercise_lable.AutoSize = true;
+            this.Exercise_lable.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Exercise_lable.Location = new System.Drawing.Point(9, 13);
+            this.Exercise_lable.Name = "Exercise_lable";
+            this.Exercise_lable.Size = new System.Drawing.Size(517, 28);
+            this.Exercise_lable.TabIndex = 0;
+            this.Exercise_lable.Text = "Пять степеней физических нагрузок в сутки";
             // 
             // Exercise_TextBox
             // 
@@ -59,7 +59,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1013, 422);
             this.Controls.Add(this.Exercise_TextBox);
-            this.Controls.Add(this.Exercise_labl);
+            this.Controls.Add(this.Exercise_lable);
             this.Name = "Exercise";
             this.Text = "Exercise";
             this.ResumeLayout(false);
@@ -69,7 +69,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Exercise_labl;
+        private System.Windows.Forms.Label Exercise_lable;
         private System.Windows.Forms.RichTextBox Exercise_TextBox;
     }
 }
