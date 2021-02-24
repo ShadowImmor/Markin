@@ -29,37 +29,37 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Exercise));
-            this.label1 = new System.Windows.Forms.Label();
-            this.Exercise_richTextBox = new System.Windows.Forms.RichTextBox();
+            this.Exercise_labl = new System.Windows.Forms.Label();
+            this.Exercise_TextBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // label1
+            // Exercise_labl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(9, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(517, 28);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Пять степеней физических нагрузок в сутки";
+            this.Exercise_labl.AutoSize = true;
+            this.Exercise_labl.Font = new System.Drawing.Font("Book Antiqua", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Exercise_labl.Location = new System.Drawing.Point(9, 13);
+            this.Exercise_labl.Name = "Exercise_labl";
+            this.Exercise_labl.Size = new System.Drawing.Size(517, 28);
+            this.Exercise_labl.TabIndex = 0;
+            this.Exercise_labl.Text = "Пять степеней физических нагрузок в сутки";
             // 
-            // Exercise_richTextBox
+            // Exercise_TextBox
             // 
-            this.Exercise_richTextBox.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Exercise_richTextBox.Location = new System.Drawing.Point(14, 45);
-            this.Exercise_richTextBox.Name = "Exercise_richTextBox";
-            this.Exercise_richTextBox.ReadOnly = true;
-            this.Exercise_richTextBox.Size = new System.Drawing.Size(989, 366);
-            this.Exercise_richTextBox.TabIndex = 2;
-            this.Exercise_richTextBox.Text = resources.GetString("Exercise_richTextBox.Text");
+            this.Exercise_TextBox.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Exercise_TextBox.Location = new System.Drawing.Point(14, 45);
+            this.Exercise_TextBox.Name = "Exercise_TextBox";
+            this.Exercise_TextBox.ReadOnly = true;
+            this.Exercise_TextBox.Size = new System.Drawing.Size(989, 366);
+            this.Exercise_TextBox.TabIndex = 2;
+            this.Exercise_TextBox.Text = resources.GetString("Exercise_TextBox.Text");
             // 
             // Exercise
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1013, 422);
-            this.Controls.Add(this.Exercise_richTextBox);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Exercise_TextBox);
+            this.Controls.Add(this.Exercise_labl);
             this.Name = "Exercise";
             this.Text = "Exercise";
             this.ResumeLayout(false);
@@ -69,7 +69,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox Exercise_richTextBox;
+        private System.Windows.Forms.Label Exercise_labl;
+        private System.Windows.Forms.RichTextBox Exercise_TextBox;
     }
 }

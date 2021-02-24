@@ -291,7 +291,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Калькулятор калорий и ИМТ";
             ((System.ComponentModel.ISupportInitialize)(this.Height_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Weight_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Year_numericUpDown)).EndInit();
