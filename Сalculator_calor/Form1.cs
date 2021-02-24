@@ -29,15 +29,15 @@ namespace Сalculator_calor
 
         class Calculator
         {
-            double weight_1, height_1, countCalor;
+            double weight_2, height_2, countCalor;
             int year, iMT;
             string activ, gender, worldHO;
             public void Calculate_button_Click(Form1 form1)
             {
-                height_1 = (double)form1.Height_numericUpDown.Value;
-                weight_1 = (double)form1.Weight_numericUpDown.Value;
+                height_2 = (double)form1.Height_numericUpDown.Value;
+                weight_2 = (double)form1.Weight_numericUpDown.Value;
                 year = (int)form1.Year_numericUpDown.Value;
-                countCalor = 10 * weight_1 + 6.25 * height_1 - 5 * year;
+                countCalor = 10 * weight_2 + 6.25 * height_2 - 5 * year;
                 if (form1.Male_radioButton.Checked == true)
                 {
                     countCalor += 5;
@@ -81,10 +81,10 @@ namespace Сalculator_calor
                             break;
                         }
                 }
-                form1.Resultat_richTextBox.Text = "Для сохранения веса суточная потебность в калориях " + gender + " возрастом " + year + " лет и весом " + weight_1 + " кг., при росте " + height_1 + " см. и " + activ + " активности:" + (int)countCalor + "ккал\n";
+                form1.Resultat_richTextBox.Text = "Для сохранения веса суточная потебность в калориях " + gender + " возрастом " + year + " лет и весом " + weight_2 + " кг., при росте " + height_2 + " см. и " + activ + " активности:" + (int)countCalor + "ккал\n";
 
-                iMT = (int)(weight_1 / (height_1 / 100 * height_1 / 100));
-                form1.Resultat_richTextBox.Text += "Для роста " + height_1  + " см., при весе " + weight_1 + " кг.индекс массы тела равен:" + iMT + "\n";
+                iMT = (int)(weight_2 / (height_2 / 100 * height_2 / 100));
+                form1.Resultat_richTextBox.Text += "Для роста " + height_2  + " см., при весе " + weight_2 + " кг.индекс массы тела равен:" + iMT + "\n";
                 if (iMT < 16)
                     worldHO = "выраженный дефицит массы тела";
                 else if (iMT < 18.5)
