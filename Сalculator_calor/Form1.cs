@@ -29,7 +29,7 @@ namespace Сalculator_calor
 
         class Calculator
         {
-            double weight_2, height_2, countCalor;
+            double weight_2 = 50, height_2, countCalor;
             int year, iMT;
             string activ, gender, worldHO;
             public void Calculate_button_Click(Form1 form1)
